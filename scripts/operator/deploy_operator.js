@@ -35,7 +35,7 @@ const main = async () => {
     swapOperator: swapOperator.address,
   };
 
-  fs.writeFileSync('./local/operator/addresses.json', JSON.stringify(newAddresses, null, 2));
+  fs.writeFileSync('./scripts/operator/addresses.json', JSON.stringify(newAddresses, null, 2));
   console.log('wrote addresses.json');
 
   // await etherscanVerification(swapOperator.address, args);

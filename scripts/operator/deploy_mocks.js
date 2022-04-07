@@ -99,7 +99,7 @@ const main = async () => {
     master: master.address,
   };
 
-  fs.writeFileSync('./local/operator/addresses.json', JSON.stringify(newAddresses, null, 2));
+  fs.writeFileSync('./scripts/operator/addresses.json', JSON.stringify(newAddresses, null, 2));
   console.log('wrote addresses.json');
 
   // await etherscanVerification(master.address, []);
